@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Master Pro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quiz-container">
+
+    <!-- HOME SCREEN -->
+    <div id="home-screen">
+        <h1>🏆 Quiz Master</h1>
+        <p>Prove you're not smart 😏</p>
+
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Enter Your Name..." maxlength="15">
+        </div>
+
+        <h3>Select a Topic</h3>
+        <button class="category-btn" data-cat="coding">💻 Coding</button>
+        <button class="category-btn" data-cat="space">🚀 Space</button>
+        <button class="category-btn" data-cat="general">🌍 General</button>
+    </div>
+
+    <!-- QUIZ SCREEN -->
+    <div id="quiz-screen" class="hide">
+        <div class="header">
+            <span id="category-label"></span>
+            <span id="score-live">Score: 0</span>
+        </div>
+
+        <div class="progress-bar">
+            <div id="progress"></div>
+        </div>
+
+        <h2 id="question-text"></h2>
+        <div id="answer-buttons" class="btn-grid"></div>
+        <button id="next-btn" class="hide">Next →</button>
+    </div>
+
+    <!-- LEADERBOARD -->
+    <div id="leaderboard-screen" class="hide">
+        <h2>🏅 Leaderboard</h2>
+        <ul id="leaderboard-list"></ul>
+        <button id="play-again-btn">Play Again</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
